@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mongodb_change_streams_python_example"
+version = "0.1.0"
+description = "Example for using change streams in a Python Flask Application"
+authors = ["shingtoli <shingto@shingto.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pymongo = "^3.11.3"
+Flask = "^1.1.2"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
