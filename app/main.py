@@ -12,7 +12,7 @@ def watch(collection, store):
             print(change)
             if change['operationType'] in ['insert']:
                 store[change['documentKey']['_id']] = change['fullDocument']
-            sleep(0.005)
+            sleep(0.002)
 
 def start_watch_thread(collection, store):
     watch_thread = Thread(target=watch, args=(collection, store))

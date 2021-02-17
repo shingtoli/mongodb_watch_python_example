@@ -25,7 +25,7 @@ class TestMongoWatch(TestCase):
         inserted_ids = create_response.json['inserted_ids']
         self.assertEqual(len(inserted_ids), 1)
 
-        sleep(0.01)
+        sleep(0.02)
         print(self.tasks)
 
         fetch_response= self.app.get('/tasks')
